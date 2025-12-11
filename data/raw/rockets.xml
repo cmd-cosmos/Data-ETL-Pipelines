@@ -3,27 +3,27 @@ Basic XML containing LV name and manufacturer
 -->
 
 <Rockets>
-    <Rocket>
+    <Rocket snum="1">
         <Name>PSLV</Name>
         <Manufacturer>ISRO</Manufacturer>
     </Rocket>
-    <Rocket>
+    <Rocket snum="2">
         <Name>GSLV</Name>
         <Manufacturer>ISRO</Manufacturer>
     </Rocket>
-    <Rocket>
+    <Rocket snum="3">
         <Name>Falcon 9</Name>
         <Manufacturer>SpaceX</Manufacturer>
     </Rocket>
-    <Rocket>
+    <Rocket snum="4">
         <Name>Falcon Heavy</Name>
         <Manufacturer>SpaceX</Manufacturer>
     </Rocket>
-    <Rocket>
+    <Rocket snum="5">
         <Name>Saturn V</Name>
         <Manufacturer>NASA</Manufacturer>
     </Rocket>
-    <Rocket>
+    <Rocket snum="6">
         <Name>Space Launch System</Name>
         <Manufacturer>NASA</Manufacturer>
     </Rocket>
