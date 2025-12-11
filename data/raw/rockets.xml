@@ -1,0 +1,30 @@
+<!--
+Basic XML containing LV name and manufacturer
+-->
+
+<Rockets>
+    <Rocket>
+        <Name>PSLV</Name>
+        <Manufacturer>ISRO</Manufacturer>
+    </Rocket>
+    <Rocket>
+        <Name>GSLV</Name>
+        <Manufacturer>ISRO</Manufacturer>
+    </Rocket>
+    <Rocket>
+        <Name>Falcon 9</Name>
+        <Manufacturer>SpaceX</Manufacturer>
+    </Rocket>
+    <Rocket>
+        <Name>Falcon Heavy</Name>
+        <Manufacturer>SpaceX</Manufacturer>
+    </Rocket>
+    <Rocket>
+        <Name>Saturn V</Name>
+        <Manufacturer>NASA</Manufacturer>
+    </Rocket>
+    <Rocket>
+        <Name>Space Launch System</Name>
+        <Manufacturer>NASA</Manufacturer>
+    </Rocket>
+</Rockets>
