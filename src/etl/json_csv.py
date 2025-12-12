@@ -9,9 +9,13 @@ import pandas as pd
 def json_csv(json_path, csv_path):
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
+
+    if isinstance(data, dict) and len(data) == 1:
+        key = next(iter(data))
+        data = data[key]
     if isinstance(data, dict):
         data = [data]
-    
+
     df = pd.json_normalize(data=data)
     os.makedirs(os.path.dirname(csv_path), exist_ok=True)
     df.to_csv(csv_path, index=False)
