@@ -1,0 +1,51 @@
+{
+  "rockets": [
+    {
+      "name": "Falcon 9",
+      "manufacturer": "SpaceX",
+      "stages": 2,
+      "dimensions": {
+        "height_m": 70,
+        "diameter_m": 3.7
+      },
+      "payload": {
+        "to_LEO_kg": 22800,
+        "to_GTO_kg": 8300
+      },
+      "propulsion": {
+        "first_stage": {
+          "engines": 9,
+          "engine_type": "Merlin 1D",
+          "thrust_kN": 7607
+        },
+        "second_stage": {
+          "engine_type": "Merlin Vacuum",
+          "thrust_kN": 981
+        }
+      }
+    },
+    {
+      "name": "Ariane 5",
+      "manufacturer": "Arianespace",
+      "stages": 2,
+      "dimensions": {
+        "height_m": 53,
+        "diameter_m": 5.4
+      },
+      "payload": {
+        "to_LEO_kg": 21000,
+        "to_GTO_kg": 10200
+      },
+      "propulsion": {
+        "main_stage": {
+          "engine_type": "Vulcain 2",
+          "thrust_kN": 1359
+        },
+        "boosters": {
+          "count": 2,
+          "thrust_each_kN": 7080
+        }
+      }
+    }
+  ]
+}
