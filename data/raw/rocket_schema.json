@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "rockets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "manufacturer": {"type": "string"},
+          "stages": {"type": "integer"},
+          "dimensions": {
+            "type": "object",
+            "properties": {
+              "height_m": {"type": "number"},
+              "diameter_m": {"type": "number"}
+            },
+            "required": ["height_m", "diameter_m"]
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "to_LEO_kg": {"type": "number"},
+              "to_GTO_kg": {"type": "number"}
+            },
+            "required": ["to_LEO_kg", "to_GTO_kg"]
+          },
+          "propulsion": {
+            "type": "object",
+            "properties": {
+              "first_stage": {
+                "type": "object",
+                "properties": {
+                  "engines": {"type": "integer"},
+                  "engine_type": {"type": "string"},
+                  "thrust_kN": {"type": "number"}
+                },
+                "required": ["engines", "engine_type", "thrust_kN"]
+              },
+              "second_stage": {
+                "type": "object",
+                "properties": {
+                  "engine_type": {"type": "string"},
+                  "thrust_kN": {"type": "number"}
+                },
+                "required": ["engine_type", "thrust_kN"]
+              },
+              "main_stage": {
+                "type": "object",
+                "properties": {
+                  "engine_type": {"type": "string"},
+                  "thrust_kN": {"type": "number"}
+                },
+                "required": ["engine_type", "thrust_kN"]
+              },
+              "boosters": {
+                "type": "object",
+                "properties": {
+                  "count": {"type": "integer"},
+                  "thrust_each_kN": {"type": "number"}
+                },
+                "required": ["count", "thrust_each_kN"]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": ["name", "manufacturer", "stages", "dimensions", "payload", "propulsion"]
+      }
+    }
+  },
+  "required": ["rockets"]
+}
